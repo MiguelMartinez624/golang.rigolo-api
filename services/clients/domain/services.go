@@ -7,6 +7,8 @@ import (
 
 type ClientsService interface {
 	AddNewClient(newClient NewClient) (*Client, *ClientError)
+
+	GetAllClients() (clientList []Client, clientError *ClientError)
 }
 
 type Service struct {
@@ -39,4 +41,8 @@ func (s *Service) AddNewClient(newClient NewClient) (*Client, *ClientError) {
 	}
 
 	return s.clientsRepo.SaveClient(clientToStore)
+}
+
+func (s *Service) GetAllClients() (clientList []Client, clientError *ClientError) {
+	return s.clientsRepo.GetAllClients()
 }

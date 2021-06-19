@@ -32,3 +32,14 @@ func (ctrl *ClientsHTTPController) CreateClient(c *gin.Context) {
 
 	c.JSON(http.StatusOK, common.Result{Error: nil, Data: "client registed succefully"})
 }
+
+func (ctrl *ClientsHTTPController) GetAllClients(c *gin.Context) {
+	clients, err := ctrl.clientsDomain.GetAllClients()
+	if err != nil {
+		log.Printf("[RegisterNewClient] error :: %+v \n", err)
+		c.JSON(http.StatusBadRequest, common.Result{Error: err, Data: nil})
+		return
+	}
+
+	c.JSON(http.StatusOK, common.Result{Error: nil, Data: clients})
+}

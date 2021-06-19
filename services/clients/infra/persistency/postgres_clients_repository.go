@@ -37,3 +37,11 @@ func (p PostgresClientsRepository) SaveClient(client domain.Client) (*domain.Cli
 
 	return &client, nil
 }
+
+func (p PostgresClientsRepository) GetAllClients() (clientList []domain.Client, clientError *domain.ClientError) {
+	err := p.db.Find(&clientList).Error
+	if err != nil {
+		return nil, domain.NewPersistenceLayerError(err)
+	}
+	return clientList, nil
+}

@@ -25,6 +25,7 @@ func Bootstrap(config ClientsServiceConfiguration) *domain.Domain {
 	r := config.Server
 	router := r.Group("clients")
 	router.POST("", httpCtrl.CreateClient)
+	router.GET("", httpCtrl.GetAllClients)
 
 	return nil
 }
