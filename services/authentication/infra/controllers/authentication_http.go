@@ -3,6 +3,7 @@ package controllers
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/rigolo-api/services/authentication/domain"
+	"github.com/rigolo-api/services/authentication/domain/data"
 
 	"log"
 	"net/http"

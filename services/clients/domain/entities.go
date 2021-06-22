@@ -1,22 +1,37 @@
 package domain
 
-import "github.com/rigolo-api/common"
+import (
+	"github.com/rigolo-api/common/value_objects"
+	"strings"
+)
 
 type Client struct {
-	ID     common.Identifier `json:"id" gorm:"primarykey"`
-	Phone  common.Phone      `json:"phone"`
-	Email  common.Email      `json:"email"`
-	Name   string            `json:"name"`
-	Region string            `json:"region"`
+	ID     value_objects.Identifier `json:"id" gorm:"primarykey"`
+	Phone  value_objects.Phone      `json:"phone"`
+	Email  value_objects.Email      `json:"email"`
+	Name   string                   `json:"name"`
+	Region string                   `json:"region"`
 }
 
 type NewClient struct {
-	Name   string `json:"name"`
-	Phone  common.Phone `json:"phone"`
-	Email  common.Email `json:"email"`
-	Region string `json:"region"`
+	Name   string              `json:"name"`
+	Phone  value_objects.Phone `json:"phone"`
+	Email  value_objects.Email `json:"email"`
+	Region string              `json:"region"`
 }
 
-func (nc NewClient) IsValid() *ClientError {
+func (nc *NewClient) IsValid() *ClientError {
+	if value_objects.IsEmailValid(string(nc.Email)) {
+		return NewVerificationLayerError("[email] is not valid")
+	}
+
+	if strings.Trim(nc.Name, " ") == "" {
+		return NewVerificationLayerError("[name] is not valid")
+	}
+
+	if !value_objects.IsPhoneValid(string(nc.Phone)) {
+		return NewVerificationLayerError("[phone] is not valid")
+	}
+
 	return nil
 }

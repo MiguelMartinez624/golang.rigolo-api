@@ -8,6 +8,7 @@ var (
 	InvalidPhone     ErrorCode = "C-001"
 	DuplicatedPhone  ErrorCode = "C-002"
 	PersistencyLayer ErrorCode = "C-003"
+	InvalidData      ErrorCode = "C-004"
 )
 
 type ClientError struct {
@@ -30,4 +31,12 @@ func NewPersistenceLayerError(data interface{}) *ClientError {
 		Code: PersistencyLayer,
 		Msg:  "a unexpected error occurs on the persistency layer",
 		Data: data}
+}
+
+func NewVerificationLayerError(data interface{}) *ClientError {
+	return &ClientError{
+		Code: InvalidData,
+		Msg:  "some fields are not valid.",
+		Data: data}
+
 }

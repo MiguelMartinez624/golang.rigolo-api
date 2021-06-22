@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:heroku" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="805725d5-da4c-49f5-aaba-b2ac2f388532" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/common/value_objects/phone.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/errors.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/jwt.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/middleware.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/clients/clients.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/clients/clients.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/clients/domain/domain.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/clients/domain/domain.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/clients/domain/repositories.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/clients/domain/repositories.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/value_objects/value_objects.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/value_objects/value_objects.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/authentication/infra/controllers/authentication_http.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/authentication/infra/controllers/authentication_http.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/clients/domain/entities.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/clients/domain/entities.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/clients/domain/errors.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/clients/domain/errors.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/clients/domain/services.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/clients/domain/services.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/clients/infra/controllers/http_clients_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/clients/infra/controllers/http_clients_controller.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/clients/infra/persistency/postgres_clients_repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/clients/infra/persistency/postgres_clients_repository.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +64,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -45,11 +74,28 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\migue\go\src\github.com\rigolo-api" />
+      <recent name="C:\Users\migue\go\src\github.com\rigolo-api\common\value_objects" />
+      <recent name="C:\Users\migue\go\src\github.com\rigolo-api\services" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\migue\go\src\github.com\rigolo-api\common\value_objects" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -59,5 +105,13 @@
       <screen x="1920" y="0" width="1366" height="728" />
     </state>
     <state x="2408" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1624053591601" />
+    <state x="2310" y="97" width="585" height="534" key="find.popup" timestamp="1624132513694">
+      <screen x="1920" y="0" width="1366" height="728" />
+    </state>
+    <state x="2310" y="97" width="585" height="534" key="find.popup/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1624132513694" />
+    <state x="2266" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1624133071887">
+      <screen x="1920" y="0" width="1366" height="728" />
+    </state>
+    <state x="2266" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1624133071887" />
   </component>
 </project>

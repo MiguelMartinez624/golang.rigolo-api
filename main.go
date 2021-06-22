@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"github.com/rigolo-api/services/authentication"
 	"github.com/rigolo-api/services/clients"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
@@ -37,7 +38,7 @@ func main() {
 
 	// Context bootstrapping
 	clients.Bootstrap(clients.ClientsServiceConfiguration{DB: db, Server: r})
-
+	authentication.Bootstrap(db, r)
 	log.Fatal(r.Run(fmt.Sprintf(":%v", serverPort)))
 }
 func CORS(c *gin.Context) {

@@ -1,7 +1,7 @@
 package domain
 
 import (
-	"github.com/rigolo-api/common"
+	"github.com/rigolo-api/common/value_objects"
 	"log"
 )
 
@@ -33,7 +33,7 @@ func (s *Service) AddNewClient(newClient NewClient) (*Client, *ClientError) {
 	}
 
 	clientToStore := Client{
-		ID:     common.NewIdentifier(),
+		ID:     value_objects.NewID(),
 		Phone:  newClient.Phone,
 		Email:  newClient.Email,
 		Name:   newClient.Name,
