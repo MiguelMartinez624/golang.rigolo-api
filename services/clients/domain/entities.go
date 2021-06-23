@@ -21,7 +21,7 @@ type NewClient struct {
 }
 
 func (nc *NewClient) IsValid() *ClientError {
-	if   value_objects.IsEmailValid(string(nc.Email)) {
+	if   !value_objects.IsEmailValid(string(nc.Email)) {
 		return NewVerificationLayerError("email")
 	}
 
