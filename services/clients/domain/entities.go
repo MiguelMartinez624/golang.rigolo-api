@@ -22,15 +22,15 @@ type NewClient struct {
 
 func (nc *NewClient) IsValid() *ClientError {
 	if value_objects.IsEmailValid(string(nc.Email)) {
-		return NewVerificationLayerError("[email] is not valid")
+		return NewVerificationLayerError("email")
 	}
 
 	if strings.Trim(nc.Name, " ") == "" {
-		return NewVerificationLayerError("[name] is not valid")
+		return NewVerificationLayerError("name")
 	}
 
 	if !value_objects.IsPhoneValid(string(nc.Phone)) {
-		return NewVerificationLayerError("[phone] is not valid")
+		return NewVerificationLayerError("phone")
 	}
 
 	return nil
