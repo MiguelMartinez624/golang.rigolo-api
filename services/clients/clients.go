@@ -6,6 +6,7 @@ import (
 	"github.com/rigolo-api/services/clients/infra/controllers"
 	"github.com/rigolo-api/services/clients/infra/persistency"
 	"gorm.io/gorm"
+	"log"
 )
 
 type ClientsServiceConfiguration struct {
@@ -23,6 +24,10 @@ func Bootstrap(config ClientsServiceConfiguration) *domain.Domain {
 
 	//routing
 	r := config.Server
+	if r == nil {
+		log.Printf("could not mount routes")
+		return nil
+	}
 	router := r.Group("clients")
 	router.POST("", httpCtrl.CreateClient)
 	router.GET("", httpCtrl.GetAllClients)

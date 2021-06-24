@@ -23,6 +23,7 @@ func (ctrl *ClientsHTTPController) CreateClient(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, common.Result{Error: err, Data: nil})
 		return
 	}
+	log.Printf("%+v \n",newClient)
 	_, err := ctrl.clientsDomain.RegisterNewClient(newClient)
 	if err != nil {
 		log.Printf("[RegisterNewClient] error :: %+v \n", err)

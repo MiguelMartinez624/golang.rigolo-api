@@ -25,9 +25,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="805725d5-da4c-49f5-aaba-b2ac2f388532" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/services/clients/integration_tests/register_new_client_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/value_objects/email.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/value_objects/email.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/clients/domain/entities.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/clients/domain/entities.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/dtos.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/dtos.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/common/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/common/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/authentication/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/services/authentication/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/authentication/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/services/authentication/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/clients/clients.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/clients/clients.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/clients/domain/errors.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/clients/domain/errors.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/clients/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/services/clients/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/clients/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/services/clients/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/clients/infra/controllers/http_clients_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/clients/infra/controllers/http_clients_controller.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +102,10 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
+    <state x="2195" y="5" key="#Plugins" timestamp="1624560947459">
+      <screen x="1920" y="0" width="1366" height="728" />
+    </state>
+    <state x="2195" y="5" key="#Plugins/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1624560947459" />
     <state x="2408" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1624053591601">
       <screen x="1920" y="0" width="1366" height="728" />
     </state>

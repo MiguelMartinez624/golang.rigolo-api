@@ -33,16 +33,16 @@ func NewPersistenceLayerError(data interface{}) *ClientError {
 		Data: data}
 }
 
-type fieldErrorDetail struct {
-	Field string `json:"field"`
+type FieldErrorDetail struct {
+	FieldName string `json:"field"`
 }
 
 func NewVerificationLayerError(field string) *ClientError {
 	return &ClientError{
 		Code: InvalidData,
 		Msg:  "some fields are not valid.",
-		Data: fieldErrorDetail{
-			Field: field,
+		Data: FieldErrorDetail{
+			FieldName: field,
 		}}
 
 }
