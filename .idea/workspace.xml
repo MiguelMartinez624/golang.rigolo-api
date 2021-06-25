@@ -25,19 +25,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="805725d5-da4c-49f5-aaba-b2ac2f388532" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/services/clients/integration_tests/register_new_client_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/dtos.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/dtos.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/common/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/common/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/authentication/authentication.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/authentication/authentication.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/authentication/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/services/authentication/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/authentication/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/services/authentication/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/clients/clients.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/clients/clients.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/clients/domain/errors.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/clients/domain/errors.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/clients/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/services/clients/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/clients/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/services/clients/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/clients/infra/controllers/http_clients_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/clients/infra/controllers/http_clients_controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/authentication/infra/controllers/authentication_http.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/authentication/infra/controllers/authentication_http.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/clients/integration_tests/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/clients/integration_tests/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/clients/integration_tests/register_new_client_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/clients/integration_tests/register_new_client_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,16 +64,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/services/authentication/integration_tests" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\migue\go\src\github.com\rigolo-api\common\value_objects" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\migue\go\src\github.com\rigolo-api\services\authentication\integration_tests" />
       <recent name="C:\Users\migue\go\src\github.com\rigolo-api" />
       <recent name="C:\Users\migue\go\src\github.com\rigolo-api\common\value_objects" />
       <recent name="C:\Users\migue\go\src\github.com\rigolo-api\services" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\migue\go\src\github.com\rigolo-api\common\value_objects" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

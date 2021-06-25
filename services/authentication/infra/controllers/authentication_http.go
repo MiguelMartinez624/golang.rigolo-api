@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"github.com/gin-gonic/gin"
+	"github.com/rigolo-api/common"
 	"github.com/rigolo-api/services/authentication/domain"
 	"github.com/rigolo-api/services/authentication/domain/data"
 
@@ -24,14 +25,15 @@ func (ctrl *AuthenticationHTTPCtrl) CreateAccount(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, err)
 		return
 	}
+
 	err := ctrl.authContext.RegisterAccount(newAccount)
 	if err != nil {
 		log.Printf("[RegisterAccount] error :: %+v \n", err)
-		c.JSON(http.StatusBadRequest, err)
+		c.JSON(http.StatusBadRequest, common.Result{Data: true, Error: err})
 		return
 	}
 
-	c.JSON(http.StatusOK, gin.H{"success": true})
+	c.JSON(http.StatusOK, common.Result{Data: true, Error: nil})
 }
 
 func (ctrl *AuthenticationHTTPCtrl) AuthenticateAccount(c *gin.Context) {

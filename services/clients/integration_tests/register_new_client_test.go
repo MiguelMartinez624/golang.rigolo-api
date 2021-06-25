@@ -12,7 +12,7 @@ import (
 )
 
 func TestRegisterNewClient(t *testing.T) {
-	// Create a response recorder
+
 	t.Run("should register client with all valid data", func(t *testing.T) {
 		// Given
 		rr := httptest.NewRecorder()
@@ -32,7 +32,6 @@ func TestRegisterNewClient(t *testing.T) {
 		assert.Equal(t, 200, rr.Code)
 	})
 
-	// Create a response recorder
 	t.Run("it should not register without a phone", func(t *testing.T) {
 		// Given
 		rr := httptest.NewRecorder()

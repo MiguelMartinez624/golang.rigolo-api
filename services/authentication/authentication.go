@@ -20,7 +20,7 @@ func Bootstrap(db *gorm.DB, r *gin.Engine) *domain.Context {
 
 	router := r.Group("auth")
 
-	router.POST("/singup", ctrl.CreateAccount)
+	router.POST("/signup", ctrl.CreateAccount)
 	router.POST("/signin", ctrl.AuthenticateAccount)
 
 	return boundedContext

@@ -3,7 +3,7 @@ package integration_tests
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/rigolo-api/common/tests/containers"
-	"github.com/rigolo-api/services/clients"
+	"github.com/rigolo-api/services/authentication"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"log"
@@ -12,8 +12,8 @@ import (
 )
 
 var (
-	server *gin.Engine = gin.Default()
-	postgresContainer   *containers.PostgresContainer
+	server            *gin.Engine = gin.Default()
+	postgresContainer *containers.PostgresContainer
 )
 
 func TestMain(m *testing.M) {
@@ -24,12 +24,9 @@ func TestMain(m *testing.M) {
 		log.Println(err.Error())
 		panic("failed to connect database")
 	}
+	server = gin.Default()
+	authentication.Bootstrap(db, server)
 
-	clients.Bootstrap(clients.ClientsServiceConfiguration{
-		DB:     db,
-		Server: server,
-	})
-
-	// exit on test finish0
+	// exit on test finish
 	os.Exit(m.Run())
 }
